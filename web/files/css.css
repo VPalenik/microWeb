@@ -1,0 +1,323 @@
+/*html {
+    overflow-y: scroll; tímto se vždy zobrazuje scrollovací lišta vpravo - i když není ka scollovat - vypadá to lépe při přepínání stránek
+}*/
+/*pozadí jumbotronu - obrazek*/
+
+    .jumbotron {
+        background-image: url("img/jumbotron_bg.jpg");
+        background-size: cover;
+        color: #fdfdfd;
+        width: 1420px;
+        margin: 0px auto 20px auto;
+    }
+    .jumbotron p {
+        margin-bottom: 15px;
+        font-size: 21px;
+        font-weight: 800;
+    }
+
+    #logo-bobri {
+        float: left;
+        padding: 20px 40px 40px 40px;
+    }
+    #logo-4pvs {
+        float: right;
+        padding: 10px 40px 40px 40px;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        font-family: inherit;
+        font-weight: 800;
+        line-height: 1.1;
+        color: inherit;
+    }
+    body {
+        font-family: themix, sans-serif;
+    }
+
+    h1 {
+        font-family: skautbold, sans-serif;
+        font-weight: normal;
+    }
+
+    p {
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    
+
+/*Menu*/
+
+    .navbar-inverse {
+        background-color: #4b2501;
+        border-color: #4b2501;
+    }
+
+    #top {
+        background-color: #4b2501;
+    }
+
+    #navbar {
+        background-color: #4b2501;
+        border-color: #4b2501;
+        color: black;
+        font-weight: 600;
+    }
+    ul {
+        text-align: center;
+    }
+    #menu {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        width: 1130px;
+    }
+
+/*Main*/
+
+    body {
+        margin-top: 35px;
+        margin-bottom: 70px;
+    }
+    #main {
+            background-color: #fff;
+            font-family: serif;
+        }
+    
+    /*Sidebar*/
+
+        ul#menuSideBar{
+            /*padding-left: 16px;*/
+            list-style-type: none; /* Remove bullets */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margins */
+        }
+        ul.sidebar a {
+            color: unset;/*#404040*/
+            font-weight: 500;/*bold*/
+            text-decoration: none;
+            border-color: #4b2501;
+        }
+        .list-group {
+            padding-left: 0;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .navbar-form {
+            padding: 0px 0px;
+        }
+    /*bottom logos*/    
+        #logo-junak {
+            float: left;
+            padding: 0px 40px 0px 40px;
+        }
+        #logo-p3 {
+            float: right;
+            padding: 0px 40px 0px 40px;
+        }
+    /*main {
+        background-color: #00802b;
+    }
+    */
+
+/*Footer*/
+
+    nav .navbar.navbar-inverse.navbar-fixed-bottom {
+        width: 100vw;
+    }
+    #copy {
+        color: #9d9d9d;
+    }
+
+/*Responsive*/
+
+    @media (max-width: 1200px) {
+        .jumbotron {
+            display: 1000px;
+        }
+        .container {
+            width: 100vw;
+        }
+        #menu {
+            width: 1170px;
+        }
+    }    
+    @media (max-width: 992px) {
+        .jumbotron {
+            width: 800px;
+        }
+        .container {
+            padding: auto;
+        }
+        /*#menu {
+            width: 100vw;
+        }
+        .col-md-10 {
+            width: 70vw;
+            }
+        */    
+    }
+    @media (min-width: 775px) {
+        /*.col-sm-10 {
+            width: 80vw;
+        }*/
+        .container-fluid {
+            padding: unset;
+        }
+    }        
+    @media (max-width: 774px) {
+        #logo-bobri {
+            float: left;
+            padding: 0 0 10px 0;
+        }
+        #logo-4pvs {
+            float: right;
+            padding: 0;
+        }
+        .jumbotron {
+            display:none;
+        }
+        #navbar {
+            width: 100vw;
+            background-color: #4b2501;
+            border-color: #4b2501;
+            color: black;
+            font-weight: 600;
+        }
+        .nav > li {
+            border-width: 1px;
+            border-color: black;
+        }
+        .container {
+            width: 100vw;
+            padding-right: 3px;
+            padding-left: 3px;
+        }
+        #menu {
+            width: 100vw;
+        }
+        #logo-bottom {
+            width: 100vw;
+            height: 181px;
+            margin-bottom: 50px;
+        }
+        #logo-junak {
+            float: left;
+            padding: 20px 0 0 0;
+        }
+        #logo-p3 {
+            float: right;
+            padding: 0;
+        }
+        .text-center{
+            width: 100vw;
+            max-height: 50px;
+        }
+        #footer {
+            display: none;
+        }
+        .klubovna {
+            padding-left: 0px !important;
+        }
+        .lodenice {
+            padding-left: 0px !important;
+        }
+        iframe {
+            width: 700px !important;
+            height: 320px !important;
+        }
+        .calendar-container {
+            width: 700px !important;
+        }
+    }    
+    /*@media (max-width: 738px) {
+        .klubovna {
+            padding-left: 0px !important;
+        }
+        .lodenice {
+            padding-left: 0px !important;
+        }
+        iframe {
+            width: 710px !important;
+            height: 3320px !important;
+        }    
+    }*/
+    @media (max-width: 370px) {
+        .klubovna {
+            padding-left: 0px !important;
+        }
+        .lodenice {
+            padding-left: 0px !important;
+        }
+        iframe {
+            padding-left: 0px !important;
+            width: 320px !important;
+            height: 280px !important;
+        }
+    }
+
+/* Skaut font */
+    @font-face {
+        font-family: 'themix';
+        src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400.eot');
+        src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400.eot? #iefix') format('embedded-opentype');
+        src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400.woff') format('woff'),
+        url('https://cdn.skauting.cz/fonts/TheMix_LT_400.woff2') format('woff2'),
+        url('https://cdn.skauting.cz/fonts/TheMix_LT_400.otf') format('opentype'),
+        url('https://cdn.skauting.cz/fonts/TheMix_LT_400.svg#themix') format('svg');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'themix';
+        src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.eot');
+        src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.eot? #iefix') format('embedded-opentype');
+        src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.woff') format('woff'),
+        url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.woff2') format('woff2'),
+        url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.otf') format('opentype'),
+        url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.svg#themix') format('svg');
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: 'themix';
+        src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700.eot');
+        src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700.eot? #iefix') format('embedded-opentype');
+        src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700.woff') format('woff'),
+        url('https://cdn.skauting.cz/fonts/TheMix_LT_700.woff2') format('woff2'),
+        url('https://cdn.skauting.cz/fonts/TheMix_LT_700.otf') format('opentype'),
+        url('https://cdn.skauting.cz/fonts/TheMix_LT_700.svg#themix') format('svg');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'themix';
+        src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.eot');
+        src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.eot? #iefix') format('embedded-opentype');
+        src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.woff') format('woff'),
+        url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.woff2') format('woff2'),
+        url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.otf') format('opentype'),
+        url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.svg#themix') format('svg');
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: 'skautbold';
+        src: url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.eot');
+        src: url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.eot? #iefix') format('embedded-opentype');
+        src: url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.woff') format('woff'),
+        url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.woff2') format('woff2'),
+        url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.otf') format('opentype'),
+        url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.svg#skautbold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }

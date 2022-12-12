@@ -1,0 +1,40 @@
+
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 24
+Server version: 5.6.21 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2014, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+-- vytvoříme databázi s parametry
+
+mysql> create database pension8 charset utf8 collate utf8_czech_ci;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use pension8
+Database changed
+
+-- Vytvoříme tabulku
+
+mysql> create table stranka (id varchar(255) not null primary key, titulek varchar(255) not null, menu varchar (255), menutop1 varchar (255), menuSideBar varchar (255), obsah text), poradi INT (100);
+Query OK, 0 rows affected (0.28 sec)
+
+--přidáme si tři stránky
+
+mysql> insert into stranka SET id="uvod",titulek="penzion", menu="uvod", obsah="vitame vas";
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into stranka SET id="o_nas",titulek="O nas", menu="o_nas", obsah="o_nas";
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into stranka SET id="cenik",titulek="Cenik", menu="cenik", obsah="cenik";
+Query OK, 1 row affected (0.03 sec)
+
+mysql>

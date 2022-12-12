@@ -1,0 +1,197 @@
+/*Admin CSS*/
+
+    .button{
+        display: inline-block;
+        padding: 0.5rem;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .abutton {
+        border-radius: 6px;
+        cursor: default;
+        /*font-family: arial,sans-serif;*/
+        font-size: 1.8rem;
+        font-weight: bold;
+        /*height: 27px;
+        line-height: 27px;*/
+        margin: 2px 0;
+            margin-top: 2px;
+        min-width: 54px;
+        padding: 0 11px;
+        text-align: center;
+        transition: color 0.218s;
+        /*-moz-user-select: none;*/
+        /*background-color: #303134;
+        background-image: linear-gradient(top,#303134,#303134);*/
+        background-color: #fff;
+        border: 1px solid #5f6368;
+    }
+    a.abutton:hover {
+        background-color: hsla(25, 30%, 52%, 0.856);
+    }
+/*Quick Links*/
+
+    .quickLinks {
+        text-align: center;
+    }
+
+/*Side Menu*/
+    
+    #adminMenu {
+        float: left;
+        margin: 50px;
+    }
+    #adminMenu h2 {
+        margin: 2rem 1rem 2rem 1rem;
+    }
+    #adminMenu li {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+    #adminMenu a {
+        padding: 1rem;
+    }
+    a.list-group-item:hover {
+        background-color: hsla(25, 30%, 52%, 0.856);
+    }
+    a[href*="delete"] {
+        padding: 1rem;
+        color: red;
+    }
+    #menuStranek {
+        list-style-type: none;
+        padding: unset;
+        margin: 2rem 0 2rem 0;
+    }
+
+/*Editing Area*/
+    
+    #edit {
+        float: right;
+        margin: 50px;
+        width: 920px;
+        padding-right: 350px;
+        text-align: center;
+        box-sizing: initial;
+        -webkit-box-sizing: initial;
+    }
+    /*
+    #edit-options {
+        padding-bottom: 20px;
+    }
+    */
+
+/*Tiny MCE*/
+    body {
+        margin-top: 50px;
+    }
+    div.mce-edit-area {
+        background: #FFF;
+        filter: none;
+        height: 600px;
+    }
+    #obsah_ifr {
+        height: 600px !important;
+    }
+
+/*Responsive*/
+    @media (max-width: 1847px) {
+        .jumbotron {
+            display:none;
+        }
+        #adminMenu {
+            margin: 0 20 0 20;
+            width: 29rem;
+            float: left;
+        }
+        #edit {
+            width: 970px;
+            padding-right: 10px;
+            margin: 5px;
+            float: right;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        #menu {
+            width: 1170px;
+        }
+        #edit {
+            width: 970px;
+            padding-right: 10px;
+            margin: 10px;
+            float: right;
+        }
+        #adminMenu {
+            display: inline-flex;
+            margin: 25px;
+            width: 1140px;
+            float: none;
+        }
+        #adminMenu h2 {
+            padding: 0 20 0 20;
+            width: 190px;
+        }
+        #menuStranek ul li {
+            display: inline-flexbox;
+        }
+        .jumbotron {
+            display:none;
+        }
+    }
+
+    @media (max-width: 992px) {
+        #menu {
+            width: 970px;
+        }
+        #edit {
+            width: 970px;
+            padding-right: 10px;
+            margin: 10px;
+        }
+        #adminMenu {
+            float: left;
+            margin: 25px;
+            width: 200px;
+        }
+        .jumbotron {
+            display:none;
+        }
+    }
+
+    @media (max-width: 774px) {
+        .container {
+            width: 440px;
+        }
+        #menu {
+            width: 440px;
+        }
+        .jumbotron {
+            display:none;
+        }
+        #logo-bottom {
+            width: 100vw;
+            height: 22vh;
+        }
+        #logo-junak {
+            float: left;
+            padding: 0px 20px 30px 20px;
+        }
+        #logo-p3 {
+            float: right;
+            padding: 0px 20px 30px 20px;
+        }
+        footer {
+            height: 105px;
+        }
+        #edit {
+            width: 970px;
+            padding-right: 10px;
+            margin: 10px;
+        }
+        #adminMenu {
+            float: left;
+            margin: 25px;
+            width: 200px;
+        }
+    }
